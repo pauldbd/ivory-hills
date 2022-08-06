@@ -1,0 +1,327 @@
+.joinDiv {
+    height: 100vh;
+
+    background-color: #eee1df;
+
+    position: relative;
+
+    font-family: drunkWideBold; 
+
+    padding-top: 40px;
+
+    color: #ffead1; 
+
+    /* overflow: hidden; */
+
+}
+
+
+.divider {
+    height: 40px;
+    width: 100vw;
+  
+    font-size: 15px;
+  
+    background-color: rgba(255, 204, 95, 0.768);  
+
+    color: rgb(255, 255, 255);
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  
+    position: absolute;
+  
+    overflow: hidden;
+  
+    top: 0;
+}
+
+.divider p {
+    width: 1060px;
+    animation: dividerAnimation 25s linear infinite; 
+
+  
+}
+
+.divider a {
+    text-decoration: underline;
+    color: inherit; 
+  
+}
+  
+  
+
+.joinTitle {
+
+    text-align: center;
+
+    margin-top: 40px;
+    margin-right: 80px;
+
+    line-height: 80px;
+
+    font-size: 80px;
+
+    z-index: 20;
+
+}
+
+
+
+.circle1 {
+
+    width: 50vw;
+    height: 50vh;
+
+    position: absolute;
+
+    /* background-color: #9b93b7; */
+
+    background: linear-gradient(to bottom, #9b93b7dd 50%, #85a79def 50% 100%);
+
+    z-index: 0; 
+
+
+}
+
+.japaneseIvoryHills {
+
+    width: 100vh;
+    height: 20vw;
+
+    /* background-color: brown; */
+
+    position: absolute;
+
+    transform: rotate(-90deg);
+
+    left: calc(-50vh + 20vw / 2);
+    top: calc(-20vw / 2 + 50vh + 40px);
+
+    font-size: 80px;
+
+    z-index: 5; 
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+
+}
+
+@media (max-width: 690px) {
+    .japaneseIvoryHills {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .japaneseIvoryHills {
+        font-size: 30px;
+    }
+}
+
+
+
+.circle3 {
+
+    left: 0;
+    bottom: 0;
+
+    width: 50vw;
+    height: 50vh;
+
+    position: absolute;
+
+    background-color: #ffc067;
+    background: linear-gradient(to bottom, #a1ae84 50%, #ffc067dd 50% 100%);
+
+    z-index: 0; 
+
+}
+
+
+.circle4 {
+
+    right: 0px;
+    top: 40px;
+
+    width: calc(100vw - 20vw);
+    height: 50vh;
+
+    position: absolute;
+
+    background-color: #ee7b69;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    font-size: 100px;
+
+
+}
+
+.circle4 p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.circle2 {
+
+    bottom: 0;
+    right: 0;
+
+    width: calc(100vw - 20vw);
+    height: 50vh;
+
+    position: absolute;
+
+    background-color: #ff995e;
+
+    z-index: 2;
+
+}
+
+.circle2 div{
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    top: 0;
+
+}
+
+
+.joinDescritptionDiv {
+    float: left;
+    width: 60%;
+
+    height: 50vh;
+
+}
+
+.joinDescritption {
+    width: 80%;
+    margin-left: auto;
+    font-size: 18px ;
+}
+
+.discordLogo {
+    width: 40%;
+    float: right;
+
+    text-align: center;
+
+    height: 50vh;
+
+
+}
+
+.discordLogoImage {
+    width: 40%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+  
+@keyframes dividerAnimation {
+    0% {
+      margin-left: -1060px;
+    }
+    100% {
+      margin-left: 100vw;
+    }
+
+  }
+
+
+@font-face {
+    font-family: drunkWideBold;
+    src: url(../fonts/DrunkWideBold/DrunkWildBold.ttf);
+}
+
+.circle4 p {
+    font-size: 80px;
+}
+
+
+.discordLogoImage:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .joinDescritption {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .joinDescritptionDiv {
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .joinDescritption {
+        width: 80%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30%;
+
+        font-size: 10px;
+        
+
+
+    }
+    
+    .discordLogo {
+        width: 100%;
+        height: 30vh;
+    
+        text-align: center;
+    
+    }
+    
+    .discordLogoImage {
+        height: 10vh; 
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 730px) {
+
+    .circle4 p {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 300px) {
+
+    .circle4 p {
+        font-size: 30px;
+    }
+}
